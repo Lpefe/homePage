@@ -1,8 +1,8 @@
 ﻿<template>
 	<div class="list">
 		<swiper :options="swiperOption" >
-			<swiper-slide v-for="item in imgArr"><img :src="item.src"/></swiper-slide>
-			<div class="swiper-pagination" slot="pagination"></div>
+			<swiper-slide v-for="item in imgArr" :key="item.src"><img :src="item.src"/></swiper-slide>
+			<!-- <div class="swiper-pagination" slot="pagination"></div> -->
 		</swiper>
 	</div>	
 </template>
@@ -26,9 +26,23 @@
 		},
 		data() {
 			return {
+				// swiperOption: {
+                //     slidesPerView: 4,
+                //     spaceBetween: 10,
+				// },
 				swiperOption: {
-                    slidesPerView: 4,
-                    spaceBetween: 10,
+					// pagination: {
+					// 	el: ".swiper-pagination",
+					// 	clickable: true,
+					// 	type: "bullets"
+					// },
+					slidesPerView: 4,
+					autoplay: {
+						delay: 1500,
+						stopOnLastSlide: false,
+						disableOnInteraction: false
+					},
+					 loop: true  //开启轮播图前后循环模式
 				},
 				imgArr: imgArr
 			}

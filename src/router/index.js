@@ -8,20 +8,27 @@ import shareContent from '../components/shareContent'
 import aboutContent from '../components/aboutContent'
 import downloadContent from '../components/downloadContent'
 import jobContent from '../components/jobContent'
+import test from '../components/test/test.vue'
 Vue.use(VueRouter)
-
+console.log(test)
 const routes = [{
     path: '/',
     components: {
         header: header,
-        swipe: swipe,
-        swipeList: swipeList,
+        test: test,
+        // swipe: swipe,
+        // swipeList: swipeList,
         footer: footer
     },
-    beforeEnter(to, from, next) {
-        [].forEach.call(document.getElementsByTagName('li'), function(item) { item.className = '' });
-        next();
-    }
+    // beforeEnter(to, from, next) {
+    //     [].forEach.call(document.getElementsByTagName('li'), function(item) { item.className = '' });
+    //     next();
+    // }
+}, {
+    path: '/test',
+    components: {
+        test: test,
+    },
 }, {
     path: '/about',
     components: {

@@ -3,7 +3,7 @@
         <div class='address'>
             <div class='data'>
                 <img :src='src' />
-                <p>4001 507 507（周一至周日：7:00 - 24:00）</p>
+                <p>166 1977 7654（周一至周日：8:00 - 22:00）</p>
                 <p>北京市海淀区北四环西路58号理想国际大厦11层</p>
             </div>
             <div class='link'>
@@ -12,7 +12,7 @@
             </div>
         </div>
         <div class='company'>
-            <p>Copyright © 2017 ofo Inc. 保留所有权利。京公网安备 11010802022978号   |   公共事务邮箱  gr@ofo.so    商务合作邮箱  bdinchina@ofo.so</p>
+            <p><a href="http://beian.miit.gov.cn">黑ICP备19007799号</a>    |   商务合作邮箱  lipengfei1023@qq.com</p>
         </div>
     </footer>
 </template>
@@ -40,13 +40,12 @@ export default {
 <style lang='scss'>
     footer{
         top: 1000px;
-        margin-top: 10px;
         left: 0;
-        height: 310px;
+        height: 25vh;
         background: #191919;
     }
     .address {
-        height: 251px;
+        height: 165px;
         font-size: 12px;
         color: #a3a3a3;
         text-align: center;
@@ -57,20 +56,25 @@ export default {
         color: #a3a3a3;
         text-align: center;
     }
+    .company{
+        a{
+             color: #a3a3a3;
+        }
+    }
     .address img{
         width: 75px;
         height: 72px;
     }
     .data{
         position: relative;
-        top: 20%;
+        top: 7%;
     }
     .link{
         font-size: 12px;
         color: #a3a3a3;
         text-align: center; 
         position: relative;
-        top: 25%;        
+        top: 12%;        
     }
     @mixin img-style{
         display: inline-block;

@@ -19,19 +19,20 @@
 const navItems = [{
     text: '首页',
     link: '/'
-},{
-    text: '关于我们',
-    link: '/about'
-},{
-    text: '大共享',
-    link: '/share'
-},{
-    text: '下载APP',
-    link: '/download'
-},{
-    text: '加入我们',
-    link: '/job'
 }];
+// ,{
+//     text: '关于我们',
+//     link: '/about'
+// },{
+//     text: '大共享',
+//     link: '/share'
+// },{
+//     text: '下载APP',
+//     link: '/download'
+// },{
+//     text: '加入我们',
+//     link: '/job'
+// }
 import router from '../router';
 export default {
     name: 'header',
@@ -87,6 +88,7 @@ export default {
         left: 15%;
 		top: 25%;
         cursor: pointer;
+        z-index: 100;
     }
     .nav-item {
         ul {
@@ -96,6 +98,9 @@ export default {
             position: relative;
             left: 25%;
             bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center
         }
     }
     li {
@@ -103,10 +108,10 @@ export default {
         line-height: 26px;
         position: relative;
         display: inline-block;
-        margin-left: 44px;
+        margin-left: 2vw;
         color: white;
         cursor: pointer;
-        font-size: 16px;
+        font-size: 1vw;
         color: #fff;
         opacity: 0.8;
     }
