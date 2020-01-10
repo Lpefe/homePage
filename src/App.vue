@@ -9,6 +9,7 @@
     <router-view name="downloadContent"></router-view>
     <router-view name="jobContent"></router-view>
     <router-view name="footer"></router-view>
+    <router-view name="anli1"></router-view>
     <div class='clearFloat'></div>
   </div>
 </template>

@@ -9,6 +9,7 @@ import aboutContent from '../components/aboutContent'
 import downloadContent from '../components/downloadContent'
 import jobContent from '../components/jobContent'
 import test from '../components/test/test.vue'
+import anli1 from '../components/test/anli1.vue'
 Vue.use(VueRouter)
 console.log(test)
 const routes = [{
@@ -20,10 +21,10 @@ const routes = [{
         // swipeList: swipeList,
         footer: footer
     },
-    // beforeEnter(to, from, next) {
-    //     [].forEach.call(document.getElementsByTagName('li'), function(item) { item.className = '' });
-    //     next();
-    // }
+    beforeEnter(to, from, next) {
+        [].forEach.call(document.getElementsByTagName('li'), function(item) { item.className = '' });
+        next();
+    }
 }, {
     path: '/test',
     components: {
@@ -56,6 +57,12 @@ const routes = [{
         header: header,
         footer: footer,
         downloadContent: downloadContent
+    }
+}, {
+    path: '/anli1',
+    components: {
+        // header: header,
+        anli1: anli1
     }
 }]
 
