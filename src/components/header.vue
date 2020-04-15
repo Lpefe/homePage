@@ -19,10 +19,11 @@
 const navItems = [{
     text: '首页',
     link: '/'
-},{
-    text: '案例1',
-    link: '/anli1'
 }
+// ,{
+//     text: 'demo',
+//     link: '/anli1'
+// }
 
 // ,{
 //     text: '关于我们',

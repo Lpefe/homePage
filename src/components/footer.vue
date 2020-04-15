@@ -2,17 +2,17 @@
     <footer>
         <div class='address'>
             <div class='data'>
-                <img :src='src' />
+                <img style="display:block" :src='src' />
                 <p>166 1977 7654（周一至周日：8:00 - 22:00）</p>
-                <p>北京市海淀区北四环西路58号理想国际大厦11层</p>
+                <p>浙江省杭州市滨江区</p>
             </div>
-            <div class='link'>
+            <!-- <div class='link'>
                 <a id='github' href='https://github.com/rianran1993/ofo' target='_blank'/>
                 <a id='wechat' href='javascript:;' @mouseover='show' @mouseleave='hide'/>
-            </div>
+            </div> -->
         </div>
         <div class='company'>
-            <p><a href="http://beian.miit.gov.cn">黑ICP备19007799号</a>    |   商务合作邮箱  lipengfei1023@qq.com</p>
+            <p><a href="http://beian.miit.gov.cn">黑ICP备19007799号</a>    |    邮箱  lipengfei1023@qq.com</p>
         </div>
     </footer>
 </template>
@@ -23,7 +23,7 @@ export default {
     name: 'header',
     data () {
         return {
-            src: '/static/img/footer_logo.png'
+            src: '/static/img/footerLogo.png'
         }
     },
     methods: {
@@ -45,7 +45,7 @@ export default {
         background: #191919;
     }
     .address {
-        height: 165px;
+        height: 130px;
         font-size: 12px;
         color: #a3a3a3;
         text-align: center;
@@ -63,7 +63,8 @@ export default {
     }
     .address img{
         width: 75px;
-        height: 72px;
+        height:57px;
+        margin: 0 auto;
     }
     .data{
         position: relative;
